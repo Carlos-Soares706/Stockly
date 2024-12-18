@@ -1,11 +1,19 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import AppNavigator from './navigation/AppNavigator';
+import { createStackNavigator } from '@react-navigation/stack';
+
+import HomeScreen from './screens/HomeScreen';
+import ProductList from './screens/ProductList';
+
+const Stack = createStackNavigator();
 
 export default function App() {
   return (
     <NavigationContainer>
-      <AppNavigator />
+      <Stack.Navigator>
+        <Stack.Screen name="Home" component={HomeScreen} options={{ title: 'Início' }} />
+        <Stack.Screen name="ProductList" component={ProductList} options={{ title: 'Lista de Produtos' }} />
+      </Stack.Navigator>
     </NavigationContainer>
   );
 }
