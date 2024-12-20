@@ -1,0 +1,29 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "expo start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "^2.1.0",
+    "@react-navigation/native": "^7.0.14",
+    "@react-navigation/stack": "^7.1.0",
+    "axios": "^1.7.9",
+    "expo": "^52.0.19",
+    "react": "18.3.1",
+    "react-native": "0.76.5",
+    "react-native-web": "~0.19.13",
+    "expo-camera": "~16.0.10",
+    "expo-image-picker": "~16.0.3"
+  },
+  "devDependencies": {
+    "@types/react": "~18.3.12",
+    "typescript": "^5.3.3"
+  }
+}
